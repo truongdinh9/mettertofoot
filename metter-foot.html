@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metter-foot</title>
+</head>
+<body style="text-align: center">
+<table border="1" cellspacing="1" width="500" cellpadding="15">
+    <tr>
+        <td> Metter: <input type="number" id="metter" oninput="mettertofoot(this.value)"></td>
+        <td> Foot: <input type="number" id="foot" oninput="foottometter(this.value)"></td>
+    </tr>
+    <tr>
+        <td> Foot: <span id="outputfoot"></span></td>
+        <td> Metter: <span id="outputmeter"></span></td>
+    </tr>
+</table>
+
+<script>
+    function mettertofoot(x) {
+        outputfoot.innerHTML = 3.279 * x
+    }
+
+    function foottometter(x) {
+        outputmeter.innerHTML = 0.305 * x
+    }
+</script>
+</body>
+</html>
